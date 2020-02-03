@@ -1,7 +1,8 @@
-const http = require('http');
+// const http = require('http');
+const express = require('express');
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 5000;
 
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
@@ -10,5 +11,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, () => {
-    console.log(`server listening on http://${hostname}:${port}`)
+    console.log(`server listening on ${port}`);
 })
